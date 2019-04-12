@@ -15,10 +15,10 @@
  */
 package org.apache.ibatis.mapping;
 
+import org.apache.ibatis.session.Configuration;
+
 import java.util.Collections;
 import java.util.Map;
-
-import org.apache.ibatis.session.Configuration;
 
 /**
  * @author Clinton Begin
@@ -60,5 +60,7 @@ public class Discriminator {
   public String getMapIdFor(String s) {
     return discriminatorMap.get(s);
   }
+
+
 
 }
